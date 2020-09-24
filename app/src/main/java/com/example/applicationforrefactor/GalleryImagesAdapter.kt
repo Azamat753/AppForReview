@@ -1,13 +1,18 @@
 package com.example.applicationforrefactor
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.constraintlayout.widget.Placeholder
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import androidx.transition.AutoTransition
+import androidx.transition.Fade
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Priority
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -15,7 +20,8 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 import com.bumptech.glide.request.transition.Transition
 import com.example.applicationforrefactor.databinding.ItemGalleryImageBinding
-
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 fun ImageView.loadImage(context: Context, url: String?, placeholder: Int = 0) {
     val imageView = this

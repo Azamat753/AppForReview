@@ -9,11 +9,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import android.net.Uri
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.applicationforrefactor.GetGalleryData.listOfImages
+import android.database.Cursor
 import com.example.applicationforrefactor.databinding.ActivityGalleryBinding
 import com.google.gson.Gson
+import android.provider.MediaStore
 
 data class GalleryImage(
     var imagePath : String? = null,
