@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Application for refactor</string>
     <string name="you_are_not_selected_image">Вы ещё не выбрали фотографию.</string>
+    <string name="images">images</string>
+    <string name="you_choose_image">Вы выбрали фотографию.</string>
+    <string name="photo">\" фото\"</string>
 </resources>
